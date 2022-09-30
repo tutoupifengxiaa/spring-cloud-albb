@@ -12,7 +12,7 @@
         <module>nacos</module>
         <module>order</module>
         <module>stock</module>
-        <module>common</module>
+        <module>sentinel</module>
     </modules>
 
     <properties>
