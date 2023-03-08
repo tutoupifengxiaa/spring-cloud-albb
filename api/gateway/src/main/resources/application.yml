@@ -16,6 +16,9 @@ spring:
         namespace: public # 注册到 nacos 的指定 namespace，默认为 public
     # gateway 配置
     gateway:
+      discovery:
+        locator:
+          enabled: true  #让gateway可以发现nacos中的微服务
       # 路由规则
       routes:
         - id: order_route # 路由的唯一标识，路由到order

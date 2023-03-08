@@ -29,6 +29,119 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- sentinel 核心库 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+        <!-- 使用 @SentinelResource 注解依赖 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-annotation-aspectj</artifactId>
+            <version>1.8.2</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>sentinel-core</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- sentinel 规则持久化依赖 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jsr305</artifactId>
+                    <groupId>com.google.code.findbugs</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>sentinel-core</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- sentinel 流量控制依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>sentinel-annotation-aspectj</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>sentinel-core</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- openfeign 远程调用依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!-- sentinel 依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>sentinel-annotation-aspectj</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>sentinel-core</artifactId>
+                    <groupId>com.alibaba.csp</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--        redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <!-- mybatis Plus 插件-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <!--mysql连接驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
+        <!--druid数据监控-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.2.11</version>
+        </dependency>
+        <!--lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <!-- springboot 测试类 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

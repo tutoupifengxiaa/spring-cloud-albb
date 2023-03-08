@@ -1,0 +1,13 @@
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\OrderApplication.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\controller\OrderController.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\system\service\impl\UserServiceImpl.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\excption\MyBlockExceptionHandler.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\system\controller\UserController.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\config\MybatisPlusConfig.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\Utils\RedisUtil.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\Enums\Sex.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\system\mapper\UserMapper.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\config\RedisConfig.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\config\RestTemplateConfig.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\system\service\UserService.java
+G:\workspace\cloud\spring-cloud-albb\api\order\src\main\java\com\api\system\entity\UserEntity.java

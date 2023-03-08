@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/login/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api/login/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/nacos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/nacos/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/order/src/main/java" charset="UTF-8" />
@@ -15,5 +17,6 @@
     <file url="file://$PROJECT_DIR$/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/stock/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/stock/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
