@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
@@ -11,6 +12,7 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.Map;
 
+@Component
 public class JwtUtil {
     //设置token有效期为半小时
     public static final Long JWT_TTL=3600000L;

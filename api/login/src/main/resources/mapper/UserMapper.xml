@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.api.system.mapper.UserMapper">
+<!--    <insert id="addUser" parameterType="com.chen.scaffolding.nacosserver.entity.UserEntity" keyProperty="userId" >-->
+<!--        insert into user(userId, userName, status) values (#{userId, jdbcType=VARCHAR}, #{userName, jdbcType=VARCHAR}, #{status, jdbcType=VARCHAR})-->
+<!--    </insert>-->
+
+<!--    <update id="updateUser" parameterType="com.chen.scaffolding.nacosserver.entity.UserEntity" >-->
+<!--        update user set status=#{status,jdbcType=VARCHAR} where userId = #{userId,jdbcType=VARCHAR}-->
+<!--    </update>-->
+</mapper>
