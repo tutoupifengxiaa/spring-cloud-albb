@@ -27,7 +27,7 @@ public class UserController {
         List<UserEntity> userEntities = UserService.list(user);
 //        UserService.save(entity);
         for (UserEntity userEntity : userEntities) {
-            userEntity.toString()
+            userEntity.toString();
         }
 
     }

@@ -34,7 +34,7 @@ public class UserController {
         if (save == true) {
             return Result.ok("注册成功");
         }
-        return Result.fail("注册失败");
+        return Result.error("注册失败");
     }
 
     @RequestMapping("edit")
@@ -43,7 +43,7 @@ public class UserController {
         if (update == true) {
             return Result.ok("修改成功");
         }
-        return Result.fail("修改失败");
+        return Result.error("修改失败");
     }
 
     @Delete("delete")
@@ -52,6 +52,6 @@ public class UserController {
         if (remove == true) {
             return Result.ok("删除成功");
         }
-        return Result.fail("删除失败");
+        return Result.error("删除失败");
     }
 }

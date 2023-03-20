@@ -263,6 +263,7 @@ public class RedisUtil {
      * @return
      */
     public void add(String key, Map<String, String> map) {
+
         redisTemplate.opsForHash().putAll(key, map);
     }
 

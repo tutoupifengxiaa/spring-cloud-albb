@@ -3,53 +3,86 @@ package com.api.common;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
- * @author fuyupingan
- *公共Result返回类
- */
+ * @className: Restult
+ * @description: 统一后台返回格式
+ * @create: 2021-08-7 21:08
+ **/
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Result {
-    /**
-     * 是否成功
-     **/
-    private Boolean isSuccess;
-    /**
-     * 错误信息
-     **/
-    private String errorMsg;
-    /**
-     * 请求状态 200-成功 400-失败
-     **/
-    private Integer status;
-    /**
-     * 当前时间戳
-     **/
+
+    // 返回的状态码
+    private int code;
+
+    // 返回的信息提示
+    private String message;
+
+    // 返回的数据
+    private Object result;
+
+    //时间戳
     private Long timestamp;
-    /**
-     * 返回结果
-     **/
-    private Object data;
+
+    private boolean success;
 
 
-    public static Result ok() {
-        return new Result(true, null, 200, System.currentTimeMillis(),null);
+    private Result() {
     }
 
-    public static Result ok(Object data) {
-        return new Result(true, null, 200,System.currentTimeMillis(),data);
+    private Result(int code, String message, Object result,long timestamp,boolean success) {
+        this.code = code;
+        this.message = message;
+        this.result = result;
+        this.timestamp = timestamp;
+        this.success = success;
     }
 
-    public static Result ok(List<?> data) {
-        return new Result(true, null, 200,System.currentTimeMillis(),data);
+
+
+    @Deprecated
+    public static Result resultError(boolean r){
+        if(r){
+            return ok();
+        }else {
+            return error();
+        }
     }
 
-    public static Result fail(String errorMsg) {
-        return new Result(false, errorMsg, 400,System.currentTimeMillis(),null);
+    public static Result result(boolean r){
+        if(r){
+            return ok();
+        }else {
+            return error();
+        }
     }
 
+    public static Result ok(){
+        return ok(ResultConstant.OK_MESSAGE,null);
+    }
+
+    public static Result ok(Object result){
+        return ok(ResultConstant.OK_MESSAGE,result);
+    }
+
+    public static Result ok(String message, Object result){
+        return new Result(ResultConstant.OK,message,result,System.currentTimeMillis(),true);
+    }
+
+
+
+    public static Result error(){
+        return error(ResultConstant.ERROR_MESSAGE,null);
+    }
+
+    public static Result error(Object result){
+        return error(ResultConstant.ERROR_MESSAGE,result);
+    }
+
+    public static Result error(String message, Object result){
+        return new Result(ResultConstant.ERROR,message,result,System.currentTimeMillis(),false);
+    }
 }
